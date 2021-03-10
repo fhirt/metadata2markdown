@@ -15,7 +15,7 @@
 
 
 
-# spring-configuration-metadata2markdown
+# metadata2markdown
 
 Utility to transform spring configuration metadata to human-readable markdown.
 
@@ -25,7 +25,7 @@ Utility to transform spring configuration metadata to human-readable markdown.
 ## Installation
 
 ```sh
-$ npm i spring-configuration-metadata2markdown
+$ npm i metadata2markdown
 ```
 
 
@@ -44,7 +44,7 @@ $ npm i spring-configuration-metadata2markdown
 
 
 ```js
-var transformToMarkdown = require("spring-configuration-metadata2markdown");
+var transformToMarkdown = require("metadata2markdown");
 
 console.log(transformToMarkdown("json"));
 
@@ -61,7 +61,7 @@ console.log(transformToMarkdown("json"));
 
 
 
-### `transformToMarkdown(data)`
+### `metadata2markdown(data)`
 
 #### Params
 - **Array|Object|String** `data`: The input JSON data.

@@ -1,5 +1,5 @@
 {
-  "name": "spring-configuration-metadata2markdown",
+  "name": "metadata2markdown",
   "version": "1.0.0",
   "description": "Utility to transform spring configuration metadata to human-readable markdown.",
   "repository": "github.com",

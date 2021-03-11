@@ -1,20 +1,46 @@
 {
   "name": "metadata2markdown",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Utility to transform spring configuration metadata to human-readable markdown.",
-  "repository": "github.com",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:fhirt/metadata2markdown.git"
+  },
+  "bin": {
+    "metadata2markdown": "./bin/metadata2markdown"
+  },
   "main": "lib/index.js",
   "directories": {
     "example": "example",
     "test": "test"
   },
   "scripts": {
-    "test": "test/index.js"
+    "test": "standard && node test/index.js",
+    "example": "node example/index.js",
+    "lint": "standard",
+    "fix": "standard --fix"
   },
-  "keywords": [],
-  "author": "Fabio Hirt <fabio_hirt@outlook.com>",
+  "keywords": [
+    "metadata2markdown",
+    "spring",
+    "metadata",
+    "annotation-processor",
+    "documentation",
+    "automation"
+  ],
+  "author": "Fabio Hirt <fabio_hirt@outlook.com> (https://github.com/fhirt)",
+  "contributors": [
+    "Fabio Hirt <fabio_hirt@outlook.com> (https://github.com/fhirt)"
+  ],
+  "bugs": {
+    "url": "https://github.com/fhirt/metadata2markdown/issues"
+  },
+  "homepage": "https://github.com/fhirt/metadata2markdown",
   "license": "MIT",
   "dependencies": {
     "json2md": "^1.10.0"
+  },
+  "devDependencies": {
+    "standard": "^16.0.3"
   }
 }

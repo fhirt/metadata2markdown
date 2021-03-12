@@ -7,7 +7,7 @@
     "url": "git@github.com:fhirt/metadata2markdown.git"
   },
   "bin": {
-    "metadata2markdown": "./bin/metadata2markdown"
+    "metadata2markdown": "cli/metadata2markdown"
   },
   "main": "lib/index.js",
   "directories": {
@@ -38,6 +38,7 @@
   "homepage": "https://github.com/fhirt/metadata2markdown",
   "license": "MIT",
   "dependencies": {
+    "arg": "^5.0.0",
     "json2md": "^1.10.0"
   },
   "devDependencies": {

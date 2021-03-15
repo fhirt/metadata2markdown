@@ -1,27 +1,21 @@
 #!/usr/bin/env node
-const arg = require('arg')
+const meow = require('meow')
 const metadata2markdown = require('../lib')
 
-function parseArgumentsIntoOptions(rawArgs) {
-  const args = arg(
-    {
-      '--git': Boolean,
-      '--yes': Boolean,
-      '--install': Boolean,
-      '-g': '--git',
-      '-y': '--yes',
-      '-i': '--install',
-    },
-    {
-      argv: rawArgs.slice(2),
+const cli = meow(`
+  Usage
+    $ metadata2markdown
+  
+  Options
+  
+  Examples
+    $ metadata2markdown 
+`, {
+  flags: {
+    path: {
+      type: 'string',
+      alias: 'p'
     }
-  );
-  return {
-    skipPrompts: args['--yes'] || false,
-    git: args['--git'] || false,
-    template: args._[0],
-    runInstall: args['--install'] || false,
-  };
-}
-
-
+  }
+})
+console.error('not yet implemented')

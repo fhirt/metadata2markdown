@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+const meow = require('meow')
+const metadata2markdown = require('../lib')
+
+const cli = meow(`
+  Usage
+    $ metadata2markdown
+  
+  Options
+  
+  Examples
+    $ metadata2markdown 
+`, {
+  flags: {
+    path: {
+      type: 'string',
+      alias: 'p'
+    }
+  }
+})
+console.error('not yet implemented')

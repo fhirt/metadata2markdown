@@ -1,4 +1,4 @@
-const transformToMarkdown = require('../lib')
+const metadata2markdown = require('../lib')
 
 const metadata = {
   groups: [
@@ -69,12 +69,8 @@ const metadata = {
   hints: []
 }
 
-console.log(transformToMarkdown('example-project', metadata))
+console.log(metadata2markdown(metadata))
 // =>
-//
-// # example-project
-//
-//
 //
 // ## configuration properties documentation
 //
@@ -88,11 +84,4 @@ console.log(transformToMarkdown('example-project', metadata))
 // ch.tie.iengine.config.EmailProperties | sender.email.interval | java.time.Duration |  | 1m
 // ch.tie.iengine.config.EmailProperties | sender.email.subject | java.lang.String | Must not be empty. |
 // ch.tie.iengine.config.EmailProperties | sender.email.to-addresses | java.util.List<java.lang.String> | Has to contain at least one valid email-address. |  |
-//
-//
-//
-//
-// ## Powered by metadata2markdown
-//
-//   [metadata2markdown](https://github.com/fhirt/metadata2markdown)
 //
